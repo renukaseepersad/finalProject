@@ -41,7 +41,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#566494"
-                android:text="Let's Get Started!" />
+                android:fontFamily="sans-serif-medium"
+                android:text="Let's Get Started!"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
