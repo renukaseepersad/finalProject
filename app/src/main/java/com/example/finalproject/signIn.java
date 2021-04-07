@@ -35,8 +35,12 @@ public class signIn extends AppCompatActivity {
 
         FirebaseUser user = mAuth.getCurrentUser();
         if(user !=null){
-            Intent intent = new Intent(getApplicationContext(),Profile.class);
-            startActivity(intent);
+            try {
+                Intent intent = new Intent(getApplicationContext(), Profile.class);
+                startActivity(intent);
+            }catch (Exception e){
+                System.out.println("ERROR ONSTART");
+            }
         }
     }
 
@@ -64,7 +68,7 @@ public class signIn extends AppCompatActivity {
 
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestIdToken(getString(R.string.CLIENT_ID))
                 .requestEmail()
                 .build();
 
