@@ -22,7 +22,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="398dp"
+            android:layout_height="250dp"
             android:orientation="vertical">
 
             <ImageView
@@ -34,25 +34,61 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="74dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button"
+            <EditText
+                android:id="@+id/un"
                 android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textPersonName"
+                android:textColor="#566494" />
+
+            <EditText
+                android:id="@+id/pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPersonName"
+                android:textColor="#566494" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#566494"
                 android:fontFamily="sans-serif-medium"
-                android:onClick="onStart"
-                android:text="Let's Get Started!"
-                android:textSize="20sp" />
+                android:layout_gravity="center"
+                android:onClick="onLoginClick"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#566494"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center"
+                android:onClick="onSignupClick"
+                android:text="Register" />
+
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="121dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="wrap_content"
+                android:layout_height="10dp">
+
+            </androidx.appcompat.widget.AppCompatEditText>
 
             <TextView
                 android:id="@+id/name"

@@ -1,5 +1,6 @@
 package com.example.finalproject;
 
+/*
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -44,3 +45,5 @@ public class Profile extends AppCompatActivity {
 
     }
 }
+
+ */
