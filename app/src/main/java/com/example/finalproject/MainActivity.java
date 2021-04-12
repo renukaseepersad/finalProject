@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -101,6 +104,8 @@ public class MainActivity extends AppCompatActivity {
 
                             mUser = mAuth.getCurrentUser();
                             // error.setText("signInWithEmail:success " +  mUser.getEmail().toString());
+                            Intent intentnav_bar = new Intent (MainActivity.this, nav_bar.class);
+                            startActivity(intentnav_bar);
 
                         } else {
                             // If sign in fails, display a message to the user.
